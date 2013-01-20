@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Community movement to make Fremont more walkable and safer">
+    <meta name="keywords" content="Fremont, Seattle, walkable, public safety">
+
+    <title>{%  block Title %}Drew Vance{% endblock Title %}</title>
+
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/crossing39th/images/favicon.png" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}foundation.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}app.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}modernizr.foundation.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}foundation.js"></script>
+    {% block Head %}{% endblock Head %}
+</head>
+<body>
+    <div class="row">
+        <div class="five columns">
+            <a href="/"><h1>Crossing 39th</h1></a>
+        </div>
+        <div class="seven columns">
+            <div >
+                <ul class="nav-bar">
+                    <li class="{% if tabHome %}active{% endif %}"><a href="/">Home</a></li>
+
+                    {#<li class="{% if tabMoreInfo %}active{% endif %}"><a href="/moreinfo">More Info</a></li>#}
+
+                    {# <li class="{% if tabGetInvolved %}active{% endif %}"><a href="/getinvolved">Get Involved</a></li>  #}
+                    <li class="{% if tabContact%}active{% endif %}"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {%  block MainContent %}{% endblock MainContent %}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37801083-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

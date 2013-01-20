@@ -1,0 +1,85 @@
+{%  extends 'base.html' %}
+{%  block Title %}
+Crossing 39th - Contact
+{% endblock Title %}
+{% block Head %}
+    <script>
+    function Submit()
+    {
+        $('#send').html('Sending...');
+        var email = $('#email').val();
+        var subject = $('#subject').val();
+        var body = $('#body').val();
+        var data = {'email':email,'subject':subject,'body':body};
+        var postString = 'csrfmiddlewaretoken={{ csrf_token }}&data=' + JSON.stringify(data);
+        $.ajax({
+            url:'/contact',
+            type:'post',
+            data:postString,
+            complete:function (e) {
+
+                var returnedData = jQuery.parseJSON(e.responseText);
+                if (returnedData.suc == true) {
+                    $('#suc').reveal({
+                        animation: 'fade', //fade, fadeAndPop, none
+                        animationspeed: 300, //how fast animtions are
+                        closeOnBackgroundClick: true, //if you click background will modal close?
+                        dismissModalClass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+                    });
+                    $('#send').html('Sent');
+                    setTimeout("window.location = '../';", 5000);
+                }
+                else {
+                    $('#fail').reveal({
+                        animation: 'fade', //fade, fadeAndPop, none
+                        animationspeed: 300, //how fast animtions are
+                        closeOnBackgroundClick: true, //if you click background will modal close?
+                        dismissModalClass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+                    });
+
+                    $('#send').html('Failed');
+                }
+            }
+        });
+    }
+    </script>
+
+{% endblock Head %}
+
+{% block MainContent %}
+    <div class="row section">
+        <div class="eight columns">
+            <form id='contact' class="nice" method="post" action="/">
+                <label for="email">Email</label>
+                <input id="email" type="text" class="medium input-text" placeholder="">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" class="medium input-text" placeholder="">
+                <label for="body">Body</label>
+                <textarea id="body" rows="20" style="width: 100%;" placeholder=""></textarea>
+                <a id="send" href="#" onclick="Submit();return false;" class="nice button">Send</a>
+            </form>
+        </div>
+
+        <div class="four columns">
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4>Thanks for contacting us</h4>
+                    <p>Please enter an email address if you want us to get back to you. You can also email us directly at <a href="mailto:crossing39th@gmail.com">crossing39th@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div id="suc" class="reveal-modal">
+     <h2>Submitted</h2>
+     <p>Thanks for getting in touch.</p>
+     <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="fail" class="reveal-modal">
+     <h2>Submission failed</h2>
+     <p>For some reason, the request failed. Maybe your internet connection isn't working or something. If it's on our end, I'll be investigating why, so try again soon.</p>
+     <a class="close-reveal-modal">&#215;</a>
+    </div>
+{% endblock MainContent %}

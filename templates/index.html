@@ -1,0 +1,52 @@
+{%  extends 'base.html' %}
+{%  block Title %}
+Crossing 39th - Home
+{% endblock Title %}
+{% block Head %}{% endblock Head %}
+{% block MainContent %}
+    <div class="row section">
+        <div class="twelve columns ">
+                <h3>Do you want to make it safer to cross N 39th Street?</h3>
+                <h3>All you need to do is cross at Phinney.</h3>
+
+        </div>
+    </div>
+
+    <div class="row section center">
+            <div class="twelve columns ">
+                    <img src="{{ STATIC_URL }}images/map.jpg" />
+            </div>
+        </div>
+
+
+    <div class="row section">
+        <div class="four columns panel">
+            <h4>Why Cross At Phinney?</h4>
+            <p>The Seattle Department of Transportation will be conducting a study of foot traffic at this intersection.
+                If enough people cross at Phinney then measures will be taken to make crossing safer, such as better lighting or building a crosswalk.
+                However, crossing at any other point along 39th will not be counted.
+            </p>
+        </div>
+        <div class="four columns panel">
+            <h4>What Else</h4>
+            <p>Want to help our cause in other ways? <a href="/contact">Get in touch with us</a> or share this page on <a href="http://facebook.com">Facebook</a>.</a> </p>
+        </div>
+        <div class="four columns panel">
+            <h4>Upcoming Events</h4>
+
+                {% for event in events %}
+                    <div>
+                        <h6 class="nomargin">{{ event.title }}</h6>
+                        <span class="date">{{ event.datetime }}</span>
+                        <span><a href="{{ event.location_map_url }}">{{ event.location }}</a></span>
+                        <p>{{ event.description }}</p>
+                    </div>
+                {% empty %}
+                    <div>
+                        <p>No upcoming events at this time.</p>
+                    </div>
+                {% endfor %}
+
+        </div>
+    </div>
+{% endblock MainContent %}

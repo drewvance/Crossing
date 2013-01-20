@@ -1,0 +1,169 @@
+body
+{
+    background: #efebe2; url(images/subtle_grunge.png) repeat;
+}
+
+.date
+{
+    font-style: italic;
+
+}
+.panel
+{
+    background: #dbd6da !important;
+    margin-top: 25px !important;
+    height: 260px !important;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.nomargin
+{
+    margin-bottom: 1px;
+}
+
+/*
+UL.tabs-content.contained
+{
+    margin-bottom: 0px;
+}
+
+.color
+{
+    cursor: pointer;
+}
+
+.unselectable
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.scribcanvas
+{
+    border: 1px solid #E6E6E6;
+}
+
+.im-area
+{
+    border: 1px solid #E6E6E6;
+    margin-top: 40px;
+    max-height: 460px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.im-area p
+{
+    margin-left: 5px;
+}
+
+.section
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.active
+{
+    font-weight: bolder;
+}
+
+.imagethum
+{
+    width: 50px;
+    height:50px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.imagethum.active
+{
+    border: solid 1px #c2c2c2;
+    padding: 4px 4px 4px 4px;
+}
+
+.option
+{
+    cursor: pointer;
+    
+}
+
+.scrib-tab
+{
+    border-bottom: solid 1px #e6e6e6; display: block; height: 40px; padding: 0; margin-bottom: 20px; 
+    margin-bottom: 0;
+
+}
+
+.scrib-tab dd { display: block; float: left; padding: 0; margin: 0; background: #F2F2F2}
+
+.scrib-tab dd a { color: #6f6f6f; display: block; font-size: 13px; height: 40px; line-height: 40px; padding: 0px 23.8px; }
+.scrib-tab dd a.active {background: #E6E6E6}
+
+.scrib-tab-content
+{
+    display: block; margin: 0 0 20px; padding: 0;
+     list-style: none;
+    background: #E6E6E6
+}
+
+.scrib-tab-content > li
+{
+    border: 1px solid #E6E6E6;
+    border-width: 0 1px 1px 1px;
+    padding: 20px;
+    max-height: 89px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.zclip
+{
+    overflow: hidden;
+}
+
+.code
+{
+    background-color: #ffffff;
+
+}
+
+ul.tabs-content.contained.code
+{
+    margin-bottom: 17px;
+}
+
+code
+{
+    background-color: inherit;
+}
+
+.tab
+{
+    cursor: pointer;
+}
+
+.row.chapter
+{
+    margin-bottom: 10px;
+}
+
+pre > ol {
+    list-style-position: none;
+}
+
+.link-bar
+{
+  list-style: none;
+}
+*/
