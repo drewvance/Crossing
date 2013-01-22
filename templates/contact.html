@@ -48,7 +48,8 @@ Crossing 39th - Contact
 
 {% block MainContent %}
     <div class="row section">
-        <div class="eight columns">
+    <div class="eleven columns ">
+
             <form id='contact' class="nice" method="post" action="/">
                 <label for="email">Email</label>
                 <input id="email" type="text" class="medium input-text" placeholder="">
@@ -58,28 +59,18 @@ Crossing 39th - Contact
                 <textarea id="body" rows="20" style="width: 100%;" placeholder=""></textarea>
                 <a id="send" href="#" onclick="Submit();return false;" class="nice button">Send</a>
             </form>
+
+</div>
+
+
+    </div>
+
+     <div class="row">
+        <div class="twelve columns">
+            <h4>Thanks for contacting us</h4>
+            <p>Please enter an email address if you want us to get back to you. You can also email us directly at <a href="mailto:crossing39th@gmail.com">crossing39th@gmail.com</a>.</p>
         </div>
+     </div>
 
-        <div class="four columns">
 
-            <div class="row">
-                <div class="twelve columns">
-                    <h4>Thanks for contacting us</h4>
-                    <p>Please enter an email address if you want us to get back to you. You can also email us directly at <a href="mailto:crossing39th@gmail.com">crossing39th@gmail.com</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     <div id="suc" class="reveal-modal">
-     <h2>Submitted</h2>
-     <p>Thanks for getting in touch.</p>
-     <a class="close-reveal-modal">&#215;</a>
-    </div>
-
-    <div id="fail" class="reveal-modal">
-     <h2>Submission failed</h2>
-     <p>For some reason, the request failed. Maybe your internet connection isn't working or something. If it's on our end, I'll be investigating why, so try again soon.</p>
-     <a class="close-reveal-modal">&#215;</a>
-    </div>
 {% endblock MainContent %}

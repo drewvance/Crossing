@@ -4,14 +4,13 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 from django.utils import simplejson
 from django.core.mail import send_mail
-from cross.models import Event
+from cross.models import Event, MailingList
 from datetime import datetime
 
 
 
 def home(request):
-    events = Event.objects.filter(datetime__gt=datetime.utcnow())[0:5]
-    return render_to_response('index.html',{'tabHome':True,'events':events}, context_instance=RequestContext(request))
+    return render_to_response('index.html',{'tabHome':True,}, context_instance=RequestContext(request))
 
 
 def moreinfo(request):
@@ -41,6 +40,22 @@ def contact(request):
         return render_to_response('contact.html',{'tabContact':True}, context_instance=RequestContext(request))
 
 
+def mailingadd(request):
+    if request.method == 'POST':
+        try:
+            data = simplejson.loads(request.POST['data'])
+
+            MailingList.objects.create(email_address=data['email'])
+
+            mimetype = 'application/javascript'
+            data = simplejson.dumps({'suc':True})
+            return HttpResponse(data,mimetype)
+        except Exception as e:
+            mimetype = 'application/javascript'
+            data = simplejson.dumps({'suc':False})
+            return HttpResponse(data,mimetype)
+    else:
+        return render_to_response('contact.html',{'tabContact':True}, context_instance=RequestContext(request))
 
 def getinvolved(request):
     return render_to_response('getinvolved.html',{'tabGetInvolved':True}, context_instance=RequestContext(request))

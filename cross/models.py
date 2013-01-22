@@ -1,5 +1,8 @@
 from django.db import models
 
+class MailingList(models.Model):
+    email_address = models.CharField(max_length=500)
+
 
 class Event(models.Model):
     title = models.CharField(max_length=255)

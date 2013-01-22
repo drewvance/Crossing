@@ -24,7 +24,7 @@
                 <ul class="nav-bar">
                     <li class="{% if tabHome %}active{% endif %}"><a href="/">Home</a></li>
 
-                    {#<li class="{% if tabMoreInfo %}active{% endif %}"><a href="/moreinfo">More Info</a></li>#}
+                    <li class="{% if tabMoreInfo %}active{% endif %}"><a href="/moreinfo">More Info</a></li>
 
                     {# <li class="{% if tabGetInvolved %}active{% endif %}"><a href="/getinvolved">Get Involved</a></li>  #}
                     <li class="{% if tabContact%}active{% endif %}"><a href="/contact">Contact</a></li>
@@ -32,7 +32,43 @@
             </div>
         </div>
     </div>
-    {%  block MainContent %}{% endblock MainContent %}
+    <div class="row">
+        <div class="nine columns">
+            {%  block MainContent %}{% endblock MainContent %}
+        </div>
+        <div class="three columns">
+            <div class="row">
+                <form>
+                <h4>Join Our Mailing List</h4>
+                <input type="text" name="mailing_email" id="mailing_email" placeholder="Email Address">
+                <a id="send" href="#" onclick="Submit();return false;" class="nice button">Send</a>
+            </form>
+
+            </div>
+
+
+            <div class="row">
+
+            <h4>Upcoming Events</h4>
+
+                {% for event in events %}
+                    <div>
+                        <h6 class="nomargin">{{ event.title }}</h6>
+                        <span class="date">{{ event.datetime }}</span>
+                        <span><a href="{{ event.location_map_url }}">{{ event.location }}</a></span>
+                        <p>{{ event.description }}</p>
+                    </div>
+                {% empty %}
+                    <div>
+                        <p>No upcoming events at this time.</p>
+                    </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -46,5 +82,57 @@
   })();
 
 </script>
+
+    <script>
+        
+    function Submit()
+    {
+        $('#add_email').html('Sending...');
+        var email = $('#mailing_email').val();
+        var data = {'email':email};
+        var postString = 'csrfmiddlewaretoken={{ csrf_token }}&data=' + JSON.stringify(data);
+        $.ajax({
+            url:'/mailingadd',
+            type:'post',
+            data:postString,
+            complete:function (e) {
+
+                var returnedData = jQuery.parseJSON(e.responseText);
+                if (returnedData.suc == true) {
+                    $('#suc').reveal({
+                        animation: 'fade', //fade, fadeAndPop, none
+                        animationspeed: 300, //how fast animtions are
+                        closeOnBackgroundClick: true, //if you click background will modal close?
+                        dismissModalClass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+                    });
+                    $('#add_email').html('Sent');
+                }
+                else {
+                    $('#fail').reveal({
+                        animation: 'fade', //fade, fadeAndPop, none
+                        animationspeed: 300, //how fast animtions are
+                        closeOnBackgroundClick: true, //if you click background will modal close?
+                        dismissModalClass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+                    });
+
+                    $('#add_email').html('Failed');
+                }
+            }
+        });
+    }
+    </script>
+
+
+<div id="suc" class="reveal-modal">
+     <h2>Submitted</h2>
+     <p>Thanks for getting in touch.</p>
+     <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="fail" class="reveal-modal">
+     <h2>Submission failed</h2>
+     <p>For some reason, the request failed. Maybe your internet connection isn't working or something. If it's on our end, I'll be investigating why, so try again soon.</p>
+     <a class="close-reveal-modal">&#215;</a>
+    </div>
 </body>
 </html>

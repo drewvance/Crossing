@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^moreinfo$', 'cross.views.moreinfo'),
     url(r'^getinvolved$', 'cross.views.getinvolved'),
     url(r'^contact$', 'cross.views.contact'),
+    url(r'^mailingadd', 'cross.views.mailingadd'),
     # url(r'^Crossing/', include('Crossing.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
