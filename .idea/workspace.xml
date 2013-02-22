@@ -36,8 +36,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app.css">
+      <file leaf-file-name="app-1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app-1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="5" selection-start="258" selection-end="262" vertical-scroll-proportion="-13.846154">
               <folding />
@@ -45,8 +45,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundation.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/foundation.css">
+      <file leaf-file-name="foundation-1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/foundation-1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="-0.65384614">
               <folding />
@@ -54,22 +54,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favicon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/images/favicon.png">
+      <file leaf-file-name="favicon-1.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/images/favicon-1.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logo.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+      <file leaf-file-name="logo-1.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/images/logo-1.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/images/map.jpg">
+      <file leaf-file-name="map-1.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/images/map-1.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -78,25 +78,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="-10.625">
+            <state line="17" column="10" selection-start="559" selection-end="559" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="897" selection-end="897" vertical-scroll-proportion="-4.8">
+            <state line="16" column="6" selection-start="885" selection-end="885" vertical-scroll-proportion="0.5405405">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0591716">
+            <state line="19" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/static/foundation.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/app.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -499,22 +499,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/favicon.png">
+    <entry file="file://$PROJECT_DIR$/static/images/favicon-1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+    <entry file="file://$PROJECT_DIR$/static/images/logo-1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/map.jpg">
+    <entry file="file://$PROJECT_DIR$/static/images/map-1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/foundation.css">
+    <entry file="file://$PROJECT_DIR$/static/foundation-1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="-0.65384614">
           <folding />
@@ -523,28 +523,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="-10.625">
+        <state line="17" column="10" selection-start="559" selection-end="559" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app.css">
+    <entry file="file://$PROJECT_DIR$/static/app-1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="5" selection-start="258" selection-end="262" vertical-scroll-proportion="-13.846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="897" selection-end="897" vertical-scroll-proportion="-4.8">
+        <state line="19" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0591716">
+        <state line="16" column="6" selection-start="885" selection-end="885" vertical-scroll-proportion="0.5405405">
           <folding />
         </state>
       </provider>
