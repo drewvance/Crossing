@@ -17,7 +17,7 @@
 <body>
     <div class="row">
         <div class="five columns">
-            <a href="/"><h1>Crossing 39th</h1></a>
+            <a href="/"><img class="logo" src="{{ STATIC_URL }}images/logo.png" alt="Crossing 39th"></a>
         </div>
         <div class="seven columns">
             <div >
@@ -33,42 +33,48 @@
         </div>
     </div>
     <div class="row">
-        <div class="nine columns">
+        <div class="twelve columns">
             {%  block MainContent %}{% endblock MainContent %}
         </div>
-        <div class="three columns">
-            <div class="row">
-                <form>
-                <h4>Join Our Mailing List</h4>
+
+
+
+    </div>
+    <div class="row section">
+
+
+        <div class="four columns panel">
+            <h4>Why Cross At Phinney?</h4>
+            <p>
+                Our goal is to get the Seattle Department of Transportation to conduct a study of pedestrian traffic at this intersection. If enough people cross at Phinney then measures will be taken to make crossing safer, such as better lighting or painting a crosswalk. Currently, people cross at many points along 39th which keeps the pedestrian counts too low at any given intersection to justify improvements. <a href="/moreinfo">Find out more.</a>
+
+            </p>
+        </div>
+        <div class="four columns panel">
+            <h4>Get Involved</h4>
+            <p>Want to help our cause in other ways? <a href="/contact">Get in touch with us</a> or share this page on <a href="http://www.facebook.com/pages/Crossing-39th/467999086593924">Facebook</a>.</a> </p>
+             <form>
+            <h5>Join Our Mailing List</h5>
                 <input type="text" name="mailing_email" id="mailing_email" placeholder="Email Address">
                 <a id="send" href="#" onclick="Submit();return false;" class="nice button">Send</a>
             </form>
-
-            </div>
-
-
-            <div class="row">
-
+        </div>
+        <div class="four columns panel">
             <h4>Upcoming Events</h4>
-
-                {% for event in events %}
-                    <div>
-                        <h6 class="nomargin">{{ event.title }}</h6>
-                        <span class="date">{{ event.datetime }}</span>
-                        <span><a href="{{ event.location_map_url }}">{{ event.location }}</a></span>
-                        <p>{{ event.description }}</p>
-                    </div>
-                {% empty %}
-                    <div>
-                        <p>No upcoming events at this time.</p>
-                    </div>
-                {% endfor %}
-
-
-            </div>
+            {% for event in events %}
+                <div>
+                    <h6 class="nomargin">{{ event.title }}</h6>
+                    <span class="date">{{ event.datetime }}</span>
+                    <span><a href="{{ event.location_map_url }}">{{ event.location }}</a></span>
+                    <p>{{ event.description }}</p>
+                </div>
+            {% empty %}
+                <div>
+                    <p>No upcoming events at this time.</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
