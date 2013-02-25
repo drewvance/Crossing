@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-1.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app-1.css">
+      <file leaf-file-name="app-2.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app-2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="258" selection-end="262" vertical-scroll-proportion="-13.846154">
+            <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="foundation-1.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/foundation-1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="-0.65384614">
+            <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="6" selection-start="885" selection-end="885" vertical-scroll-proportion="0.5405405">
+            <state line="53" column="67" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.2788104">
               <folding />
             </state>
           </provider>
@@ -139,6 +139,7 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/app.css" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/static/app-1.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
@@ -169,8 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,6 +250,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +388,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1791" y="41" width="1551" height="934" extended-state="6" />
+    <frame x="0" y="22" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -395,8 +396,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2663116" sideWeight="0.6813725" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31862745" sideWeight="0.9993342" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27107063" sideWeight="0.5833333" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31862745" sideWeight="0.9993342" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -460,9 +461,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/moreinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="54" selection-start="597" selection-end="597" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
+        <state line="15" column="54" selection-start="597" selection-end="597" vertical-scroll-proportion="-0.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cross/views.py">
@@ -487,14 +486,16 @@
         <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cross/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="67" selection-end="80" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="15" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/foundation-1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -514,9 +515,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/foundation-1.css">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="477" column="0" selection-start="31478" selection-end="31478" vertical-scroll-proportion="-0.65384614">
+        <state line="19" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cross/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="67" selection-end="80" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -528,23 +541,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app-1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="258" selection-end="262" vertical-scroll-proportion="-13.846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="885" selection-end="885" vertical-scroll-proportion="0.5405405">
+        <state line="53" column="67" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.2788104">
           <folding />
         </state>
       </provider>
