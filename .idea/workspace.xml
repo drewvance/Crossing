@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-2.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app-2.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/app-2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state line="3" column="1" selection-start="33" selection-end="33" vertical-scroll-proportion="0.008695652">
               <folding />
             </state>
           </provider>
@@ -84,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="67" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.2788104">
+            <state line="48" column="16" selection-start="1955" selection-end="1955" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -125,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/templates/getinvolved.html" />
         <option value="$PROJECT_DIR$/cross/models.py" />
@@ -141,6 +140,7 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/static/app-1.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/app-2.css" />
       </list>
     </option>
   </component>
@@ -527,13 +527,6 @@
         <state line="3" column="17" selection-start="67" selection-end="80" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app-2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="10" selection-start="559" selection-end="559" vertical-scroll-proportion="-10.625">
@@ -543,7 +536,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="67" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.2788104">
+        <state line="48" column="16" selection-start="1955" selection-end="1955" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="33" selection-end="33" vertical-scroll-proportion="0.008695652">
           <folding />
         </state>
       </provider>
